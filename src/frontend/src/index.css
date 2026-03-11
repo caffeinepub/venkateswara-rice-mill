@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/assets/fonts/GeneralSans.woff2") format("woff2");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep forest green primary */
+    --primary: 0.38 0.12 145;
+    --primary-foreground: 0.98 0.005 90;
+
+    /* Warm off-white background */
+    --background: 0.97 0.01 85;
+    --foreground: 0.18 0.03 145;
+
+    /* Card: pure white */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.03 145;
+
+    /* Muted neutral */
+    --muted: 0.93 0.015 85;
+    --muted-foreground: 0.5 0.03 145;
+
+    /* Accent: warm gold */
+    --accent: 0.72 0.15 80;
+    --accent-foreground: 0.18 0.03 145;
+
+    /* Map blue */
+    --map-btn: 0.42 0.16 250;
+
+    /* WhatsApp green */
+    --whatsapp-btn: 0.68 0.2 150;
+
+    --secondary: 0.92 0.02 90;
+    --secondary-foreground: 0.18 0.03 145;
+
+    --destructive: 0.55 0.22 28;
+    --destructive-foreground: 0.98 0.005 90;
+
+    --border: 0.88 0.02 85;
+    --input: 0.88 0.02 85;
+    --ring: 0.38 0.12 145;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.03 145;
+
+    --radius: 0.75rem;
+
+    --chart-1: 0.38 0.12 145;
+    --chart-2: 0.55 0.15 145;
+    --chart-3: 0.42 0.16 250;
+    --chart-4: 0.72 0.15 80;
+    --chart-5: 0.68 0.2 150;
+
+    --sidebar: 0.38 0.12 145;
+    --sidebar-foreground: 0.98 0.005 90;
+    --sidebar-primary: 0.68 0.2 150;
+    --sidebar-primary-foreground: 0.98 0.005 90;
+    --sidebar-accent: 0.32 0.1 145;
+    --sidebar-accent-foreground: 0.98 0.005 90;
+    --sidebar-border: 0.32 0.1 145;
+    --sidebar-ring: 0.68 0.2 150;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
