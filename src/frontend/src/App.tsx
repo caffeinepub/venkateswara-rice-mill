@@ -223,6 +223,20 @@ export default function App() {
                 9443550669
               </a>
             </div>
+            <div className="flex items-center gap-3">
+              <span
+                className="text-xs font-bold uppercase tracking-widest w-20 flex-shrink-0"
+                style={{ color: "oklch(0.52 0.08 145)" }}
+              >
+                GSTIN
+              </span>
+              <span
+                className="font-semibold font-mono tracking-wide"
+                style={{ color: "oklch(0.22 0.10 145)" }}
+              >
+                33AATPE0880B1Z1
+              </span>
+            </div>
           </div>
         </motion.div>
 
